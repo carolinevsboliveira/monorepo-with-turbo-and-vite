@@ -1,0 +1,4 @@
+{
+    "extends": "@monorepo/code-config/tsconfig.app",
+    "include": ["src"]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@monorepo/code-config",
+  "version": "1.0.0",
+  "description": "Code config for the project",
+  "type": "module",
+  "main": "eslint.config.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "exports": {
+    "./eslint": "./eslint/eslint.config.js",
+    "./tsconfig.app": "./typescript/tsconfig.app.json",
+    "./tsconfig.node": "./typescript/tsconfig.node.json"
+  },
+  "dependencies": {
+    "eslint": "catalog:"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "eslint-plugin-react-refresh": "catalog:",
+    "globals": "catalog:",
+    "typescript-eslint": "catalog:",
+    "typescript": "catalog:"
+  }
+}
